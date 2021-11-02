@@ -1,0 +1,397 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* variáveis */
+
+:root {
+  --cor-cl-links: #000;
+  --cor-bg-links-hover: #000;
+  --cor-cl-links-hover: #fff;
+}
+
+/* estilos gerais */
+
+input {
+  outline: none;
+}
+
+ul, 
+ol {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: var(--cor-bg-links);
+}
+
+img {
+  width: 100%;
+  object-fit: cover;
+}
+
+/* menu */
+
+.menu-desktop {
+  max-width: 1300px;
+  width: 100%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+}
+
+.menu-desktop .logo {
+  width: 140px;
+}
+
+.menu-desktop nav ul {
+  display: flex;
+}
+
+.menu-desktop nav ul li {
+  margin: 0 15px 0 0;
+}
+
+  .menu-desktop nav ul li:nth-child(5) {
+    margin: 0;
+  }
+
+.menu-desktop nav ul li a {
+  font-size: .9rem;
+  font-weight: 500;
+  padding: 12px;
+}
+
+  .menu-desktop nav ul li a:hover {
+    background-color: var(--cor-bg-links-hover);
+    color: var(--cor-cl-links-hover);
+    border-radius: 40px;
+  }
+
+.menu-desktop .pesquisa-carrinho {
+  display: flex;
+}
+
+.menu-desktop .pesquisa-carrinho img {
+  width: 22px;
+  cursor: pointer;
+}
+
+  .menu-desktop .pesquisa-carrinho img:nth-child(1) {
+    margin: 0 30px 0 0;
+  }
+
+.menu-desktop .menu-hamburguer {
+  display: none;
+  width: 40px;
+}
+
+/* slide */
+
+.slide-01 img,
+.slide-02 img,
+.slide-03 img {
+  height: 58vh;
+}
+
+.container-setas {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  top: -380px;
+}
+
+.seta-antes-slides,
+.seta-depois-slides,
+.seta-antes-vitrine,
+.seta-depois-vitrine {
+  background: #00000017;
+  backdrop-filter: blur(90px);
+  border-radius: 5px;
+  padding: 9px 9px 3px 4px;
+  margin: 0 50px;
+  cursor: pointer;
+}
+
+.seta-antes-slides img,
+.seta-depois-slides img,
+.seta-antes-vitrine img,
+.seta-depois-vitrine img {
+  width: 45px;
+}
+
+/* beneficíos */
+
+.container-beneficios {
+  max-width: 1300px;
+  width: 100%;
+  margin: auto auto 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  top: -50px;
+}
+
+.container-beneficios .cards-beneficios {
+  width: calc(100% / 4);
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+}
+
+  .container-beneficios .cards-beneficios:nth-child(4) {
+    border: none;
+  }
+
+.container-beneficios .cards-beneficios .img-beneficios {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 0 12px;
+}
+
+.container-beneficios .cards-beneficios .img-beneficios img {
+  width: 59px;
+  margin: 0 10px 0 0;
+}
+
+  .container-beneficios .cards-beneficios .img-beneficios img.transportes {
+    width: 74px;
+  }
+
+  .container-beneficios .cards-beneficios .img-beneficios img.chat {
+    width: 53px;
+  }
+
+.container-beneficios .cards-beneficios .img-beneficios h3 {
+  font-weight: 200;
+  font-size: 1.5rem;
+  font-style: unset;
+  text-transform: uppercase;
+  line-height: 1;
+}
+
+.container-beneficios .cards-beneficios .img-beneficios h3 span {
+  display: block;
+  font-weight: 600;
+}
+
+.container-beneficios .cards-beneficios .conteudo-beneficios {
+  text-align: center;
+  font-size: .6rem;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+
+/* vitrine de celulares */
+
+.container-vitrine {
+  max-width: 1400px;
+  width: 100%;
+  margin: auto;
+  padding: 0 0 0 20px;
+}
+
+.container-vitrine .cards-vitrine {
+  margin: 0 30px 0 0;
+  padding: 30px 0;
+  border: 1px solid transparent;
+}
+
+  .container-vitrine .cards-vitrine:hover {
+    border: 1px solid #000;
+  }
+
+.container-vitrine .cards-vitrine .img-vitrine {
+  margin: 0 0 40px;
+  display: flex;
+  justify-content: center;
+}
+
+.container-vitrine .cards-vitrine .img-vitrine img {
+  width: 300px;
+}
+
+.container-vitrine .cards-vitrine .conteudo-vitrine h3 {
+  text-align: center;
+  font-size: 1.2rem;
+  font-weight: 500;
+  margin: 0 0 50px;
+}
+
+.container-vitrine .cards-vitrine .conteudo-vitrine span {
+  border-bottom: 2px solid #ddd;
+  max-width: 200px;
+  width: 100%;
+  margin: auto;
+  display: block;
+  padding: 5px 0;
+  font-size: .8rem;
+  text-align: center;
+}
+
+.container-vitrine .cards-vitrine .conteudo-vitrine ul {
+  padding: 40px 90px 20px 40px;
+  list-style: disc;
+}
+
+.container-vitrine .cards-vitrine .conteudo-vitrine ul li {
+  font-size: .7rem;
+  margin: 0 0 5px;
+}
+
+.container-vitrine .cards-vitrine .conteudo-vitrine p {
+  text-align: center;
+}
+
+.container-vitrine .cards-vitrine .conteudo-vitrine p:nth-of-type(1) {
+  text-decoration: line-through;
+  font-size: .9rem;
+  font-weight: 300;
+}
+
+.container-vitrine .cards-vitrine .conteudo-vitrine p:nth-of-type(2) {
+  font-size: 1.4rem;
+  font-weight: 500;
+  margin: 0 0 20px;
+}
+
+.container-vitrine .cards-vitrine .link-vitrine {
+  display: flex;
+  justify-content: center;
+  margin: 0 0 30px;
+}
+
+.container-vitrine .cards-vitrine .link-vitrine a {
+  background-color: #1428A0;
+  color: #fff;
+  padding: 11px 100px;
+  border-radius: 30px;
+}
+
+.container-setas-vitrine {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  top: -450px;
+}
+
+/* categorias */
+
+.container-categorias {
+  max-width: 1300px;
+  width: 100%;
+  margin: auto;
+  padding: 20px;
+  display: grid;
+  justify-content: space-between;
+  grid-template-columns: repeat(auto-fit, minmax(430px, 1fr));
+  grid-gap: 5px 10px;
+}
+
+
+.container-categorias .cards-categorias {
+  position: relative;
+}
+
+.container-categorias .cards-categorias .nome-categorias {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+}
+
+.container-categorias .cards-categorias .nome-categorias p {
+  font-size: 2.1rem;
+  font-weight: 500;
+  letter-spacing: -3px;
+}
+
+/* ajuda */
+
+.titulo {
+  display: flex;
+  justify-content: center;
+  padding: 50px 0 70px;
+}
+
+.titulo h2 {
+  font-size: 2.2rem;
+  font-weight: 500;
+  letter-spacing: -2px;
+}
+
+.container-ajuda {
+  max-width: 1300px;
+  width: 100%;
+  margin: auto auto 80px;
+  display: flex;
+  justify-content: center;
+  padding: 0 11px;
+}
+
+.container-ajuda .cards-ajuda {
+  width: calc(100% / 4);
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  background-color: #F8F8F8;
+  padding: 70px 30px 50px;
+  margin: 10px;
+}
+
+.container-ajuda .cards-ajuda .img-ajuda {
+  width: 70px;
+  margin: auto auto 40px;
+}
+
+.container-ajuda .cards-ajuda .conteudo-ajuda {
+  text-align: center;
+}
+
+.container-ajuda .cards-ajuda .conteudo-ajuda h3 {
+  font-weight: 500;
+  font-size: 1rem;
+  margin: 0 0 20px;
+}
+
+.container-ajuda .cards-ajuda .conteudo-ajuda p {
+  font-weight: 300;
+  font-size: .9rem;
+  margin: 0 0 80px;
+}
+
+.container-ajuda .cards-ajuda .conteudo-ajuda a {
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: .9rem;
+}
+
+/* rodapé */
+
+.container-rodape {
+  padding: 30px 0;
+  text-align: center;
+  background-color: #F8F8F8;
+}
+
+.container-rodape p:nth-child(2) {
+  margin: 0 0 20px;
+}
+
+.container-rodape p,
+.container-rodape a {
+  font-size: .9rem;
+  font-weight: 400;
+  line-height: 2;
+}
+
+.container-rodape a span{
+  color: #00CED1;
+}

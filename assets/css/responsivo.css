@@ -1,0 +1,77 @@
+/* responsivo */
+
+@media screen and (max-width: 930px) {
+  .menu-desktop nav {
+    display: none;
+  }
+
+  .menu-desktop .menu-hamburguer {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 1130px) {
+  .container-ajuda {
+    flex-wrap: wrap;
+  }
+
+  .container-ajuda .cards-ajuda {
+    width: calc(144% / 3);
+  }
+}
+
+@media screen and (max-width: 915px) {
+  .container-ajuda .cards-ajuda {
+    width: calc(143% / 3);
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .container-beneficios {
+    flex-wrap: wrap;
+  }
+
+  .container-beneficios .cards-beneficios {
+    width: calc(100% / 2);
+  }
+
+  .container-vitrine {
+    padding: 0 0 0 50px;
+  }
+
+  .container-ajuda .cards-ajuda {
+    width: calc(94% / 2);
+  }
+}
+
+@media screen and (max-width: 676px) {
+  .container-ajuda .cards-ajuda {
+    width: calc(100% / 1);
+  }
+}
+
+@media screen and (max-width: 515px) {
+  .container-categorias .cards-categorias .nome-categorias p {
+    font-size: 1.5rem;
+  }
+}
+
+@media screen and (max-width: 443px) {
+  .container-categorias {
+    grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .container-beneficios .cards-beneficios {
+    width: calc(100% / 1);
+  }
+
+  .container-categorias {
+    grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+  }
+
+  .container-setas-vitrine {
+    top: -480px;
+  }
+}
